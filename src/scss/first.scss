@@ -1,0 +1,129 @@
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #000000;
+    max-width: 785px;
+    width: 100%;
+    margin-bottom: 88px;
+    padding-top: 203px;
+    letter-spacing: 0.5px;
+}
+.blue {
+    color: $naviDark;
+}
+.first_description, .first_description-list__item {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+.first_description-list__item {
+    padding-left: 12px;
+}
+.first_description-list__item::before {
+    content: '-';
+    position: relative;
+    right: 11px;
+    bottom: 3px;
+}
+.first_description {
+    span {
+        font-weight: 700;
+    }
+}
+.first {
+    background: url(../img/bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 10px;
+    padding-bottom: 202px;
+}
+.first_description-list {
+    margin: 3px 0 77px 8px;
+}
+.first_buttons {
+    padding-bottom: 202px;
+    max-width: 396px;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    max-width: 183px;
+    width: 100%;
+    text-transform: uppercase;
+    height: 43px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+}
+.white-btn {
+color: #2A2B30;
+background: #FFFFFF;
+border: 1px solid #6F6D7B;
+
+}
+.blue-btn {
+    color: #FFFFFF;
+    background: #3E9CDC;
+    border: 1px solid #FFFFFF;
+    
+    }
+
+@media (max-width: 1510px) {
+    .webp .first {
+        background-position-x: -150px !important;
+        transition: 0.5s;
+    }
+    .wrap {padding: 0 15px;}
+}
+@media (max-width: 1160px) {
+    .webp .first {
+        background-position-x: -340px !important;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 991px) {
+    .first {
+        padding-bottom: 0px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 50px;
+        padding-top: 160px;
+        transition: 0.5s;
+    }
+    .first_buttons {
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 570px) {
+    h1 {
+        font-size: 30px;
+        line-height: 38px;
+        transition: .5s;
+    }
+    .first_description, .first_description-list__item {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 420px) {
+    .first_description, .first_description-list__item {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .first_buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 396px) {
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+        transition: .5s;
+    }
+}
