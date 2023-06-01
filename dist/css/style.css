@@ -499,7 +499,8 @@ h1 {
   gap: 30px;
   font-family: "Lato", sans-serif;
   margin-top: 87px;
-  grid-template-columns: repeat(auto-fill, 370px);
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  transition: all 0.3s;
 }
 
 .form_item input {
@@ -572,7 +573,8 @@ h1 {
 
 .select-box {
   display: flex;
-  width: 400px;
+  max-width: 370px;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -875,6 +877,21 @@ input[type=range]:focus::-ms-fill-upper {
   .wrap {
     padding: 0 15px;
   }
+
+  .form {
+    grid-template-columns: 370px;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+  }
+
+  .form_item-A,
+  .form_item-B,
+  .form_item-C,
+  .form_item-D,
+  .form_item-E,
+  .form_item-F {
+    grid-column: 1;
+  }
 }
 
 @media (max-width: 1224px) {
@@ -941,10 +958,6 @@ input[type=range]:focus::-ms-fill-upper {
   .second_item::before {
     display: none;
   }
-
-  .form_item-D input {
-    max-width: 570px;
-  }
 }
 
 @media (max-width: 570px) {
@@ -972,6 +985,30 @@ input[type=range]:focus::-ms-fill-upper {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form_item input {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .form_item-E,
+  .form_item-D {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form_item-D label {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
   }
 }
 
