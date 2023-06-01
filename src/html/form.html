@@ -1,0 +1,98 @@
+<script>
+    function rangeValue() {
+	const rangeInput = document.getElementById('percent'); 
+	let value = document.getElementById('value'); 
+	value.innerHTML = rangeInput.value + ' %';
+}
+</script>
+<form action="#" class="form">
+    <div class="form_item form_item-A">
+
+        <div class="select-box">
+                <div class="options-container">
+                <div class="option">
+                    <input
+                    type="radio"
+                    class="radio"
+                    id="sed"
+                    name="category"
+                    />
+                    <label for="sed">Sed ut perspiciatis</label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="nemo" name="category" />
+                    <label for="nemo">Nemo enim ipsam</label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="et" name="category" />
+                    <label for="et">Et harum quidem</label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="temp" name="category" />
+                    <label for="temp">Temporibus autem</label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="ita" name="category" />
+                    <label for="ita">Itaque earum rerum</label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="lor" name="category" />
+                    <label for="lor">Lorem ipsum dolor</label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="cumque" name="category" />
+                    <label for="cumque">cumque eaque fugiat </label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="solu" name="category" />
+                    <label for="solu">soluta, culpa nulla </label>
+                </div>
+        
+                <div class="option">
+                    <input type="radio" class="radio" id="lau" name="category" />
+                    <label for="lau">laudantium </label>
+                </div>
+                </div>
+        
+                <div class="selected">
+                    Выберите тип системы
+                </div>
+            </div>
+    </div>
+    <div class="form_item form_item-B">
+        <label for="email" hidden> email</label>
+        <input type="email" name="email" placeholder="Ваш e-mail" id="email">
+    </div>
+    <div class="form_item form_item-C">
+        <label for="name" hidden> name</label>
+        <input type="text" name="name" placeholder="Ваше имя" id="name">
+    </div>
+    <div class="form_item form_item-D">
+        <label for="percent" class="form_item-label-file">
+            <span>Sed ut perspiciatis, unde omnis iste natus</span> 
+            <span id="value"></span> 
+        </label>
+        <input type="range" name="percent" id="percent" oninput="rangeValue()">
+    </div>
+    <div class="form_item form_item-E">
+        <input type="file" class="input_file" name="file" id="file">
+        <label for="file" class="input_file-button">
+            <span class="input_file-icon">
+                <img class="ic" src="../img/file.svg" alt="icon for adding file">
+            </span>
+            <span class="input_file-text">прикрепить файл</span> 
+        </label>
+        
+    </div>
+    <div class="form_item form_item-F">
+        <button type="submit">Отправить</button>
+    </div>
+    
+</form>
