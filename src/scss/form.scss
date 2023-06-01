@@ -306,15 +306,12 @@ input[type=range] {
     }
 }
 @media (max-width: 400px) {
-    .form_item input {
-        display: block;
-        max-width: 300px;
-        margin: 0 auto;
+    .form {
+        grid-template-columns: 280px;
+        grid-template-rows: repeat(6, 50px);
     }
-    .form_item-E, .form_item-D, .form_item-A, .form_item-F {
-        max-width: 300px;
-        width: 100%;
-        margin: 0 auto;
+    .form_item-E {
+        margin-top: 35px;
     }
     .form_item-D label {
         display: flex;
@@ -322,6 +319,5 @@ input[type=range] {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
-        margin-bottom: 20px;
     }
 }

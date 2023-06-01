@@ -975,6 +975,11 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media (max-width: 500px) {
+  .second_title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
   .second {
     padding: 70px 0 100px;
   }
@@ -995,19 +1000,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media (max-width: 400px) {
-  .form_item input {
-    display: block;
-    max-width: 300px;
-    margin: 0 auto;
+  .form {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(6, 50px);
   }
 
-  .form_item-E,
-  .form_item-D,
-  .form_item-A,
-  .form_item-F {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
+  .form_item-E {
+    margin-top: 35px;
   }
 
   .form_item-D label {
@@ -1016,7 +1015,6 @@ input[type=range]:focus::-ms-fill-upper {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 20px;
   }
 
   .footer_text {
