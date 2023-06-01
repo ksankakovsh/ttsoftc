@@ -147,6 +147,7 @@ picture > .img-fluid {
   padding: 40px 0 36px;
   position: fixed;
   width: 100%;
+  z-index: 20;
 }
 
 .header_nav {
