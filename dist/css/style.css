@@ -974,6 +974,12 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
+@media (max-width: 500px) {
+  .second {
+    padding: 70px 0 100px;
+  }
+}
+
 @media (max-width: 420px) {
   .first_description,
   .first_description-list__item {
@@ -1011,6 +1017,24 @@ input[type=range]:focus::-ms-fill-upper {
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
+  }
+
+  .footer_text {
+    text-align: center;
+  }
+
+  .footer_pay {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    border: none;
+  }
+
+  .footer_contact {
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
   }
 }
 

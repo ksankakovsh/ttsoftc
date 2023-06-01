@@ -64,3 +64,20 @@
         gap: 20px;
     }
 }
+@media (max-width: 400px) {
+    .footer_text {
+        text-align: center;
+    }
+    .footer_pay {
+        flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    border: none;
+    }
+    .footer_contact {
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
