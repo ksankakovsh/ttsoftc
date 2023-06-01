@@ -996,7 +996,9 @@ input[type=range]:focus::-ms-fill-upper {
   }
 
   .form_item-E,
-  .form_item-D {
+  .form_item-D,
+  .form_item-A,
+  .form_item-F {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
