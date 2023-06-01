@@ -25,7 +25,7 @@ const optionsContainer = document.querySelector(".options-container");
 const optionsList = document.querySelectorAll(".option");
 
 selected.addEventListener("click", () => {
-    selected.classList.toggle("selected-hover")
+    selected.classList.add("selected-hover")
     optionsContainer.classList.toggle("active");
     });
 

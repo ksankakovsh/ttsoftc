@@ -1,6 +1,7 @@
 .second {
     padding: 121px 0 152px;
     background: url(../img/BG.jpg) center no-repeat; 
+    background-size: cover !important;
     color: #FFFFFF;
     font-family: Lato, sans-serif;
 }
@@ -77,4 +78,26 @@
     text-align: center;
     margin-bottom: 80px;
     color: #BBBBBB;
+}
+@media (max-width: 1224px) {
+    .second__icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .second_item {
+        &::before {
+            content: url(../img/dot3.svg);
+            right: -30px;
+        }
+    }
+    .second_item:nth-child(4)::before {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+
+    .second_item {
+        &::before {display: none;}
+    }
 }

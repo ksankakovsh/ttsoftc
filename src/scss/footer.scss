@@ -46,10 +46,21 @@
     align-items: center;
     gap: 10px;
     color: #ffffff;
-    
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     span {font-family: 'Lato', sans-serif;}
+    &:hover {
+        color: $naviBlue;
+    }
     
+}
+
+@media (max-width: 1090px) {
+    .footer_contact {padding-left: 20px;}
+    .footer .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 }
