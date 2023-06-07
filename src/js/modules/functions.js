@@ -36,11 +36,12 @@ selected.addEventListener("click", () => {
     });
 });
 // input range
-function rangeValue() {
-	const rangeInput = document.getElementById('percent'); 
-	let value = document.getElementById('value'); 
+const rangeInput = document.getElementById('percent'); 
+ rangeInput.addEventListener('input', (e) => {
+    let value = document.getElementById('value'); 
 	value.innerHTML = rangeInput.value;
-}
+ })
+
 // input file
 let inputs = document.querySelectorAll('.input_file');
         Array.prototype.forEach.call(inputs, function (input) {
