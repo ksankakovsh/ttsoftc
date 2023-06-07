@@ -5,13 +5,16 @@ position: fixed;
     width: 100%;
     z-index: 20;
 }
-.header_nav {
+.header__row {
+    display: flex; justify-content: space-between; align-items: center
+}
+.header__nav {
     max-width: 435px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.header_nav__link {
+.header__nav-link {
     font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -27,13 +30,13 @@ position: fixed;
 .active-link {
     color: $naviBlue;
 }
-.mob_menu {display: none;}
+.header__hamburger {display: none;}
 @media (max-width: 991px) {
-    .mob_menu {display: block;}
-    .header_nav {display: none;}
+    .header__hamburger {display: block;}
+    .header__nav {display: none;}
 }
 @media (max-width: 350px) {
-    .logo-link {
+    .header__logo {
         svg {
             width: 85%;
         }

@@ -20,9 +20,9 @@ export function isWebp(){
 
 }
 // custom select
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container");
-const optionsList = document.querySelectorAll(".option");
+const selected = document.querySelector(".form__select_selected");
+const optionsContainer = document.querySelector(".form__options-container");
+const optionsList = document.querySelectorAll(".form__option");
 
 selected.addEventListener("click", () => {
     selected.classList.add("selected-hover")
@@ -52,7 +52,7 @@ let inputs = document.querySelectorAll('.input_file');
             countFiles = this.files.length;
     
             if (countFiles)
-            label.querySelector('.input_file-text').innerText = 'Выбрано файлов: ' + countFiles;
+            label.querySelector('.input_file-text').innerText = countFiles + ' файл выбран';
             else
             label.querySelector('.input_file-text').innerText = labelVal;
         });

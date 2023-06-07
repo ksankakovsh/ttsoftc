@@ -1,98 +1,87 @@
 <script>
-    function rangeValue() {
-	const rangeInput = document.getElementById('percent'); 
-	let value = document.getElementById('value'); 
-	value.innerHTML = rangeInput.value + ' %';
-}
+  function rangeValue() {
+    const rangeInput = document.getElementById("percent");
+    let value = document.getElementById("value");
+    value.innerHTML = rangeInput.value + " %";
+  }
 </script>
 <form action="#" class="form">
-    <div class="form_item form_item-A">
+  <div class="form__item form__item_A">
+    <div class="form__select">
+      <div class="form__options-container">
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="sed" name="category" />
+          <label class="form__option-label" for="sed">Sed ut perspiciatis</label>
+        </div>
 
-        <div class="select-box">
-                <div class="options-container">
-                <div class="option">
-                    <input
-                    type="radio"
-                    class="radio"
-                    id="sed"
-                    name="category"
-                    >
-                    <label for="sed">Sed ut perspiciatis</label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="nemo" name="category">
-                    <label for="nemo">Nemo enim ipsam</label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="et" name="category">
-                    <label for="et">Et harum quidem</label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="temp" name="category">
-                    <label for="temp">Temporibus autem</label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="ita" name="category">
-                    <label for="ita">Itaque earum rerum</label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="lor" name="category">
-                    <label for="lor">Lorem ipsum dolor</label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="cumque" name="category">
-                    <label for="cumque">cumque eaque fugiat </label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="solu" name="category">
-                    <label for="solu">soluta, culpa nulla </label>
-                </div>
-        
-                <div class="option">
-                    <input type="radio" class="radio" id="lau" name="category">
-                    <label for="lau">laudantium </label>
-                </div>
-                </div>
-        
-                <div class="selected">
-                    Выберите тип системы
-                </div>
-            </div>
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="nemo" name="category" />
+          <label class="form__option-label" for="nemo">Nemo enim ipsam</label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="et" name="category" />
+          <label class="form__option-label" for="et">Et harum quidem</label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="temp" name="category" />
+          <label class="form__option-label" for="temp">Temporibus autem</label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="ita" name="category" />
+          <label class="form__option-label" for="ita">Itaque earum rerum</label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="lor" name="category" />
+          <label class="form__option-label" for="lor">Lorem ipsum dolor</label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="cumque" name="category" />
+          <label class="form__option-label" for="cumque">cumque eaque fugiat </label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="solu" name="category" />
+          <label class="form__option-label" for="solu">soluta, culpa nulla </label>
+        </div>
+
+        <div class="form__option">
+          <input type="radio" class="form__option-input" id="lau" name="category" />
+          <label class="form__option-label" for="lau">laudantium </label>
+        </div>
+      </div>
+
+      <div class="form__select form__select_selected">Выберите тип системы</div>
     </div>
-    <div class="form_item form_item-B">
-        <label for="email" hidden> email</label>
-        <input type="email" name="email" placeholder="Ваш e-mail" id="email">
-    </div>
-    <div class="form_item form_item-C">
-        <label for="name" hidden> name</label>
-        <input type="text" name="name" placeholder="Ваше имя" id="name">
-    </div>
-    <div class="form_item form_item-D">
-        <label for="percent" class="form_item-label-file">
-            <span>Sed ut perspiciatis, unde omnis iste natus</span> 
-            <span id="value"></span> 
-        </label>
-        <input type="range" name="percent" id="percent" oninput="rangeValue()">
-    </div>
-    <div class="form_item form_item-E">
-        <input type="file" class="input_file" name="file" id="file">
-        <label for="file" class="input_file-button">
-            <span class="input_file-icon">
-                <img class="ic" src="img/file.svg" alt="icon for adding file">
-            </span>
-            <span class="input_file-text">прикрепить файл</span> 
-        </label>
-        
-    </div>
-    <div class="form_item form_item-F">
-        <button type="submit">Отправить</button>
-    </div>
-    
+  </div>
+  <div class="form__item form__item_B">
+    <label class="form__label" for="email" hidden> email</label>
+    <input class="form__input" type="email" name="email" placeholder="Ваш e-mail" id="email" />
+  </div>
+  <div class="form__item form__item_C">
+    <label class="form__label" for="name" hidden> name</label>
+    <input class="form__input" type="text" name="name" placeholder="Ваше имя" id="name" />
+  </div>
+  <div class="form__item form__item_D">
+    <label for="percent">
+      <span class="form__range-description">Sed ut perspiciatis, unde omnis iste natus</span>
+      <span class="form__range-value" id="value"></span>
+    </label>
+    <input class="form__input form__input_range" type="range" name="percent" id="percent" oninput="rangeValue()" />
+  </div>
+  <div class="form__item form__item_E">
+    <input type="file" class="form__input-file" name="file" id="file" />
+    <label for="file" class="form__button-file">
+        <img class="form__icon-file" src="img/file.svg" alt="icon for adding file" />
+      
+      <span class="form__text-file">прикрепить файл</span>
+    </label>
+  </div>
+  <div class="form__item form__item_F">
+    <button class="form__button-submit" type="submit">Отправить</button>
+  </div>
 </form>

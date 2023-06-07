@@ -1,4 +1,4 @@
-h1 {
+.first__title {
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -14,22 +14,22 @@ h1 {
 .blue {
     color: $naviDark;
 }
-.first_description, .first_description-list__item {
+.first__description, .first__description-list-item {
     font-family: 'Lato';
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
 }
-.first_description-list__item {
+.first__description-list-item {
     padding-left: 12px;
 }
-.first_description-list__item::before {
+.first__description-list-item::before {
     content: '-';
     position: relative;
     right: 11px;
     bottom: 3px;
 }
-.first_description {
+.first__description {
     span {
         font-weight: 700;
     }
@@ -40,16 +40,16 @@ h1 {
     background-position-x: 10px;
     // padding-bottom: 202px;
 }
-.first_description-list {
+.first__description-list {
     margin: 3px 0 77px 8px;
 }
-.first_buttons {
+.first__buttons {
     padding-bottom: 202px;
     max-width: 396px;
     display: flex;
     justify-content: space-between;
 }
-.button {
+.first__button {
     max-width: 183px;
     width: 100%;
     text-transform: uppercase;
@@ -59,7 +59,7 @@ h1 {
     font-size: 13px;
     transition: all 0.3s;
 }
-.white-btn {
+.first__button_white {
 color: #2A2B30;
 background: #FFFFFF;
 border: 1px solid #6F6D7B;
@@ -67,7 +67,7 @@ border: 1px solid #6F6D7B;
         @include hoverBtn;
     }
 }
-.blue-btn {
+.first__button_blue {
     color: #FFFFFF;
     background: #3E9CDC;
     border: 1px solid #FFFFFF;
@@ -93,41 +93,41 @@ border: 1px solid #6F6D7B;
     .first {
         padding-bottom: 0px;
     }
-    h1 {
+    .first__title {
         font-size: 40px;
         line-height: 48px;
         margin-bottom: 50px;
         padding-top: 160px;
         transition: 0.5s;
     }
-    .first_buttons {
+    .first__buttons {
         padding-bottom: 100px;
     }
 }
 @media (max-width: 570px) {
-    h1 {
+    .first__title {
         font-size: 30px;
         line-height: 38px;
         transition: .5s;
     }
-    .first_description, .first_description-list__item {
+    .first__description, .first__description-list-item {
         font-size: 17px;
         line-height: 28px;
     }
 }
 @media (max-width: 420px) {
-    .first_description, .first_description-list__item {
+    .first__description, .first__description-list-item {
         font-size: 15px;
         line-height: 24px;
     }
-    .first_buttons {
+    .first__buttons {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
 }
 @media (max-width: 396px) {
-    h1 {
+    .first__title {
         font-size: 24px;
         line-height: 32px;
         transition: .5s;
