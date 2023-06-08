@@ -623,6 +623,7 @@ body {
   border: 1px solid #FFFFFF;
   border-radius: 3px;
   order: 0;
+  padding-left: 10px !important;
 }
 
 .form__select_selected::after {
@@ -818,6 +819,11 @@ body {
 
 .form__input_range:focus::-ms-fill-upper {
   background: #eaeaea;
+}
+
+.form__range-description {
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .footer {

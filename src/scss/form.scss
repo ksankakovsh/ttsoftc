@@ -117,6 +117,8 @@
         border: 1px solid #FFFFFF;
         border-radius: 3px;
         order: 0;
+        padding-left: 10px !important;
+        
     }
     
     .form__select_selected::after {
@@ -313,7 +315,10 @@ color: #272733;
     .form__input_range:focus::-ms-fill-upper {
         background: #eaeaea;
     }
-
+    .form__range-description {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
 @media (max-width: 1510px) {
     .form {
         grid-template-columns: 370px;

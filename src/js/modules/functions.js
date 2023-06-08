@@ -39,7 +39,7 @@ selected.addEventListener("click", () => {
 const rangeInput = document.getElementById('percent'); 
  rangeInput.addEventListener('input', (e) => {
     let value = document.getElementById('value'); 
-	value.innerHTML = rangeInput.value;
+	value.innerHTML = rangeInput.value + ' %';
  })
 
 // input file
